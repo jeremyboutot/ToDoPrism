@@ -1,0 +1,13 @@
+C:\Xam\ToDoPrism\ToDoPrism\bin\Debug\netstandard2.0\ToDoPrism.deps.json
+C:\Xam\ToDoPrism\ToDoPrism\bin\Debug\netstandard2.0\ToDoPrism.dll
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\ToDoPrism.csproj.CoreCompileInputs.cache
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\ToDoPrism.AssemblyInfoInputs.cache
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\ToDoPrism.AssemblyInfo.cs
+C:\Xam\ToDoPrism\ToDoPrism\bin\Debug\netstandard2.0\ToDoPrism.pdb
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\ToDoPrism.dll
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\ToDoPrism.pdb
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\ToDoPrism.csprojAssemblyReference.cache
+C:\Xam\ToDoPrism\ToDoPrism\obj\Debug\netstandard2.0\Views\ItemPage.xaml.g.cs

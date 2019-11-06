@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ToDoPrism.Views.ItemPage">
+    <ScrollView>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand" >
+            <Label
+                Text="Title"
+                TextColor="Black"
+                FontSize="Medium">
+            </Label>
+            <StackLayout Orientation="Horizontal">
+                <Entry
+                    HorizontalOptions="FillAndExpand"
+                    Text="{Binding SelectedItem.Name}"
+                    TextColor="Purple">
+                </Entry>
+            </StackLayout>
+            <Label
+                Text="Notes"
+                TextColor="Black"
+                FontSize="Medium">
+            </Label>
+            <StackLayout Orientation="Horizontal">
+                <Editor
+                    Text="{Binding SelectedItem.Notes}"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    TextColor="Purple"
+                    HeightRequest="150">
+                </Editor>
+            </StackLayout>
+            <Label
+                Text="Done"
+                TextColor="Black"
+                FontSize="Medium">
+            </Label>
+            <DatePicker Date="{Binding Due}"/>
+            <Switch 
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand"
+                IsToggled="{Binding Done}">
+            </Switch>
+            <Button 
+                Text="Save"
+                Command="{Binding SaveItemCommand}">
+            </Button>
+            <Button
+                Text="Delete Item"
+                Command="{Binding DeleteItemCommand}">
+            </Button>
+            <Button
+                Text="Cancel"
+                Command="{Binding GoBackCommand}">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
