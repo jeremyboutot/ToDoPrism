@@ -56,7 +56,20 @@ namespace ToDoPrism.ViewModels
         public TodoItem SelectedItem
         {
             get { return selectedItem; }
-            set { SetProperty(ref selectedItem, value); }
+            set
+            {
+                SetProperty(ref selectedItem, value);
+                SetFields();
+            }            
+        }
+
+        private void SetFields()
+        {
+            Name = SelectedItem.Name;
+            Notes = SelectedItem.Notes;
+            Due = SelectedItem.Due;
+            Done = SelectedItem.Done;
+            _itemId = SelectedItem.Id;
         }
         #endregion
 
@@ -69,7 +82,7 @@ namespace ToDoPrism.ViewModels
         private string _name;
         private string _notes;
         private bool _done;
-        private DateTime _due;
+        private DateTime _due = DateTime.Today;
         //private readonly IItemAnnouncementService _itemAnnouncementService;
         //private readonly IVoiceRecognitionService _voiceRecognitionService;
         #endregion
@@ -92,7 +105,7 @@ namespace ToDoPrism.ViewModels
                 Due = _due
             };
 
-            await _toDoItemsRepository.AddItem(todoItem);
+            await _toDoItemsRepository.AddOrUpdate(todoItem);
             await _navigationService.GoBackAsync();
         }
 

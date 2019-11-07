@@ -60,7 +60,7 @@ namespace ToDoPrism.ViewModels
             this.repository = todoItemRepository;
             AddToDoItemCommand = new DelegateCommand(OnAddItem);
 
-            //Items = new ObservableCollection<TodoItem>();                 
+            //Items = new ObservableCollection<TodoItem>();
         }
 
         private async void OnEditItem()

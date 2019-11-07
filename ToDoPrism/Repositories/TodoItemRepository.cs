@@ -19,7 +19,7 @@ namespace ToDoPrism.Repositories
         {
             await CreateConnection();
             await connection.InsertAsync(item);
-            OnItemAdded?.Invoke(this, item);
+            //OnItemAdded?.Invoke(this, item);
         }
 
         public async Task AddOrUpdate(TodoItem item)
